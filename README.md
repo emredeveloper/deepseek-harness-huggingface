@@ -23,7 +23,8 @@ Add the built module to a Harness patch file:
 ```yaml
 - insert:
     - id: huggingface
-      name: /absolute/path/to/deepseek-harness-huggingface/lib/index.js
+      # Use a file URL (on Windows, for example: file:///C:/path/to/lib/index.js)
+      name: file:///absolute/path/to/deepseek-harness-huggingface/lib/index.js
 ```
 
 Then start Harness with the patch:
